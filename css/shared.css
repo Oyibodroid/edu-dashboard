@@ -8,12 +8,6 @@ li{
     color: #000;
 }
 
-#main-body{
-    display: flex;
-    width: 100vw;
-    max-height: 100vh;
-}
-
 .red{
     color: crimson;
 }
