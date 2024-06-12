@@ -18,10 +18,8 @@ for (let i = 0; i < logOption.length; i++) {
 hamBurger.addEventListener("click", function () {
   sideNav.classList.toggle("hide");
   leftSide.classList.toggle("hide");
-  console.log("helo");
 
   if (sideNav.classList != "hide" && leftSide.classList != "hide") {
-    console.log("hello");
     for (let b = 0; b < burger.length; b++) {
       const element = burger[b];
       element.classList.add("hide");
@@ -34,4 +32,3 @@ hamBurger.addEventListener("click", function () {
     }
 });
 
-console.log(logOption);
