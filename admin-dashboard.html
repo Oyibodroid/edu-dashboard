@@ -1,109 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/shared.css">
-    <link rel="stylesheet" href="./css/admin-panel.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/shared.css" />
+    <link rel="stylesheet" href="./css/admin-panel.css" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Admin dashboard</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <section id="main-body">
-        <!-- SIDE NAV -->
-        <section id="side-nav" class="hide">
+      <!-- SIDE NAV -->
+      <section id="side-nav" class="">
+        <nav class="links">
+          <a href="">
+            <span id="logo">scholarly</span>
+          </a>
 
-            <nav class="links">
-                <a href="">
-                    <span id="logo">scholarly</span>
-                </a>
+          <hr />
 
-                <ul>
-                    <li>
-                        <a href="#" class="link">
-                            <i class='bx bxs-home'></i>
-                            <span>Home</span>
-                        </a>
-                    </li>
-                    <li class="plus">
-                        <a href="#" class="link">
-                            <i class='bx bxs-group'></i>
-                            <span>Students</span>
-                        </a>
-                        <button class="add">&plus;</button>
-                    </li>
-                    <li class="plus">
-                        <a href="#" class="link">
-                            <i class='bx bxs-user'></i>
-                            <span>instructors</span>
-                        </a>
-                        <button class="add">&plus;</button>
-                    </li>
-                    <li>
-                        <a href="#" class="link">
-                            <i class='bx bxs-wallet-alt'></i>
-                            <span>Accounting</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="link">
-                            <i class='bx bxs-envelope'></i>
-                            <span>Messages</span>
-                        </a>
-                    </li>
-                </ul>
+          <ul id="link-holder">
+            <li>
+              <a href="#" class="link">
+                <i class="bx bxs-home"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="plus">
+              <a href="#" class="link">
+                <i class="bx bxs-group"></i>
+                <span>Students</span>
+              </a>
+              <button class="add">&plus;</button>
+            </li>
+            <li class="plus">
+              <a href="#" class="link">
+                <i class="bx bxs-user"></i>
+                <span>Teachers</span>
+              </a>
+              <button class="add">&plus;</button>
+            </li>
+            <li>
+              <a href="#" class="link">
+                <i class="bx bxs-wallet-alt"></i>
+                <span>Accounting</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="link">
+                <i class="bx bxs-envelope"></i>
+                <span>Messages</span>
+              </a>
+            </li>
+          </ul>
 
-                <ul>
-                    <li>
-                        <a href="#" class="link">
-                            <i class='bx bxs-cog'></i>
-                            <span>Settings</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="red link">
-                            <i class='bx bxs-exit'></i>
-                            <span>Sign out</span>
-                        </a>
-                    </li>
-                </ul>
+          <hr />
 
-            </nav>
+          <ul>
+            <li>
+              <a href="#" class="link">
+                <i class="bx bxs-cog"></i>
+                <span>Settings</span>
+              </a>
+            </li>
+            <li class="red">
+              <a href="#" class="link">
+                <i class="bx bxs-exit"></i>
+                <span>Sign out</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <!-- SIDE NAV -->
 
-        </section>
-        <!-- SIDE NAV -->
+      <section id="main" class="">
+        <!--header-->
+        <div class="header">
+          <div id="hamburger">
+            <span class="burger"></span>
+            <span class="burger"></span>
+            <span class="burger"></span>
+          </div>
+
+          <div class="left-side">
+            <form action="" id="searcher">
+              <input
+                type="text"
+                placeholder="search"
+                name="search"
+                id="search"
+              />
+              <button>Search</button>
+            </form>
+          </div>
+        </div>
+        <!--header-->
+
+        <!--body-->
+
+        <div id="body">
+                    <div id="breadcrumb">
+            <ul>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </div>
+        </div>
 
 
-        <section id="main" class="hide">
-            <div class="header">
 
-                <div class="left-side">
-                    <div id="hamburger">
-                        <span class="burger"></span>
-                        <span class="burger"></span>
-                        <span class="burger"></span>
-                    </div>
-
-                    <form action="" id="searcher">
-                        <input type="text" placeholder="What do you want to find" name="search" id="search">
-                        <button>Search</button>
-                    </form>
-                </div>
-
-            </div>
-        </section>
+      </section>
     </section>
     <script src="./js/index-form.js" defer></script>
-
-</body>
-
+    <!-- <script src="./bootstrap-5.3.3-dist/js/bootstrap.js"></script> -->
+  </body>
 </html>

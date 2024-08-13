@@ -1,3 +1,4 @@
+/* NAVIGATION */
 #side-nav {
     position: fixed;
     background: #494950;
@@ -37,14 +38,6 @@
     height: 100%;
     padding: .5rem 1rem;
     justify-content: space-between;
-}
-
-.link {
-    cursor: pointer;
-}
-
-.links ul li {
-    width: 100%;
 }
 
 .link:hover i {
@@ -95,16 +88,8 @@ a {
     transition: ease-in 300ms margin;
 }
 
-input {
-    padding: .5rem;
-    background: none;
-    border: 1px solid #444;
-    border-radius: 0;
-    width: 15rem;
-}
-
 #hamburger {
-    margin: 1rem;
+    margin: 1rem .3rem 1rem 1rem;
     cursor: pointer;
     pointer-events: all;
 }
@@ -140,15 +125,33 @@ input:focus {
     outline: none;
 }
 
-#searcher button {
+#searcher input {
+    max-width: 15rem;
+    width: 100%;
     background: none;
+    border-radius: .7rem;
+    padding: .3rem .5rem;
     border: 1px solid #444;
-    padding: .5rem 1rem;
 }
 
 #searcher {
     display: flex;
     flex-direction: row;
     border-radius: 1rem;
+    position: relative;
     width: 100%;
 }
+
+#searcher button {
+    position: absolute;
+    right: -50%;
+    background: none;
+    border: 1px solid #444;
+    padding: .5rem 1rem;
+}
+
+/* NAVIGATION */
+
+
+/* mainbody */
+
